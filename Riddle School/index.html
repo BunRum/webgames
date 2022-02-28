@@ -3,7 +3,7 @@
         <div id="container"></div>
         <script src="https://bunrum.github.io/RuffleForGoogleSites/launch.js"></script>
         <script>
-            swf = "./" + window.location.pathname + ".swf";
+            swf = window.location.href.concat(window.location.pathname.replace('/webgames/', '').slice(0, newStr.length - 1).concat(".swf"))
         </script>
     </body>
 </html>
